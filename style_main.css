@@ -1,0 +1,81 @@
+body{
+	background: #F08080;
+}
+@font-face {
+    font-family: NexaScript-Light; /* Гарнитура шрифта */
+    src: url(fonts/19442.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: Pecita; /* Гарнитура шрифта */
+    src: url(fonts/20180.otf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: Honey; /* Гарнитура шрифта */
+    src: url(fonts/20190.otf); /* Путь к файлу со шрифтом */
+   }
+h1{
+	color: white;
+	font-family: Pecita;
+	padding: 20px;
+	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	font-size: 40px;
+}
+h2{
+	color: white;
+	font-family: NexaScript-Light;
+	padding: 20px;
+	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+}
+.img{
+ border-radius: 20px;
+ padding:15px;
+ animation: pulse 2s ease-in-out infinite; 
+}
+#header, .header{
+	background: #CD5C5C;
+	width: 80%;
+	margin: 30px auto;
+	transition: 0.7s; /* Время эффекта */
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+	height:50%;
+	padding:30px 25px 20px;
+	position:relative;
+	color:white;
+}
+#content, .content{
+	background: #CD5C5C;
+	width: 70%;
+	margin: 30px auto;
+	transition: 0.7s; /* Время эффекта */
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+	height:100%;
+	padding:100px 25px 20px;
+	position:relative;
+	color:white;
+	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+}
+hr{
+	border: none; /* Убираем границу для браузера Firefox */
+	color: #CD5C5C; /* Цвет линии для остальных браузеров */
+	background-color: #CD5C5C; /* Цвет линии для браузера Firefox и Opera */
+	height: 5px; /* Толщина линии */
+}
+@keyframes pulse {
+  from {
+    transform: scale(.9);
+  }
+  30% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.9);
+  }
+}
