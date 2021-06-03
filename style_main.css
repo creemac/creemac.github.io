@@ -1,5 +1,5 @@
 body{
-	background: #F08080;
+	background:  linear-gradient(to top, #FF69B4, #F08080);
 }
 @font-face {
     font-family: NexaScript-Light; /* Гарнитура шрифта */
@@ -35,7 +35,6 @@ h2{
  animation: pulse 2s ease-in-out infinite; 
 }
 #header, .header{
-	background: #CD5C5C;
 	width: 80%;
 	margin: 30px auto;
 	transition: 0.7s; /* Время эффекта */
@@ -48,7 +47,7 @@ h2{
 	color:white;
 }
 #content, .content{
-	background: #CD5C5C;
+	background: rgba(255, 20, 147, 0.4);
 	width: 70%;
 	margin: 30px auto;
 	transition: 0.7s; /* Время эффекта */
@@ -65,8 +64,9 @@ h2{
 hr{
 	border: none; /* Убираем границу для браузера Firefox */
 	color: #CD5C5C; /* Цвет линии для остальных браузеров */
-	background-color: #CD5C5C; /* Цвет линии для браузера Firefox и Opera */
+	background-color: rgba(255, 20, 147, 0.8); /* Цвет линии для браузера Firefox и Opera */
 	height: 5px; /* Толщина линии */
+	border-radius: 50px; 
 }
 @keyframes pulse {
   from {
