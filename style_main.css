@@ -1,6 +1,7 @@
 body{
 	background:  linear-gradient(to top, #FF69B4, #F08080);
 }
+a {text-decoration: none; }
 @font-face {
     font-family: NexaScript-Light; /* Гарнитура шрифта */
     src: url(fonts/19442.ttf); /* Путь к файлу со шрифтом */
