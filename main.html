@@ -3,20 +3,20 @@
 <head>
 	<title>✧ ༺ ♥ ༻ ✧</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style_main.css">
+	<link id= "mainstyle"rel="stylesheet" type="text/css" href="style_main_day.css">
 	<link rel="shortcut icon" href="images/serdce.jpg" type="image/x-icon" width="100%">
 </head>
 <body id="body"> 
-	<h1 align="center" class="header" style="background:#ff5f75">♥ ❤ Я Люблю Сашу ❤ ♥ </h1>
+	<h1 align="center" id="header" style="background:#ff5f75">♥ ❤ Я Люблю Сашу ❤ ♥ </h1>
 	<div class="img" align="center">
-		<img src="images/561-5618922_heart-png-clip-art-transparent-image-heart.png" style="width: 25%;">
+		<img id="ser" src="images/561-5618922_heart-png-clip-art-transparent-image-heart.png" style="width: 25%;">
 	</div>
 	<div>
-		<p align="center" style="font-family: Honey; color: white; font-size: 50px;text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);">
+		<p id="t.moe_s" align="center" style="font-family: Honey; color: white; font-size: 50px;text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);">
 			Мое Сердчеко Cтучит (Для Тебя)
 		</p>
 	</div>
-	<h2 align="center" class="header" style="background: rgba(255, 20, 147, 0.4)">Котик)</h2>
+	<h2 align="center" class="header">Котик)</h2>
 	<div align="center">
 		<a title="Котик)" rel="nofollow" target="_blank" href="images/кот1.jpg">
 			<img src="images/кот1.jpg" style="width: 18%; border-radius: 25px; padding: 10px">
@@ -39,15 +39,14 @@
 			*:･ﾟ✧(=✪ ᆺ ✪=)*:･ﾟ✧
 		</p>
 	</div>
-	<h2 align="center" class="header" style="background: rgba(255, 20, 147, 0.4)">Мой Кайф</h2>
+	<h2 align="center" class="header">Мой Кайф</h2>
 	<div class="content" align="center">
 		<p style="font-family: NexaScript-Light; color: white; font-size: 30px; margin:0; text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.3);">
 			Напоминает мне о Ней...
 		</p>
 	<iframe style="border-radius: 20px; " src="https://open.spotify.com/embed/track/0V8Q2u0yxJ9yURkjblmPU9" width="80%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 	</div>
-	<hr>
-	<h2 align="center" class="header" style="background: rgba(255, 20, 147, 0.4)">Милашкинские Картиночки  Для Саши</h2>
+	<h2 align="center" class="header">Милашкинские Картиночки  Для Саши</h2>
 	<div class="content" align="center">
 		<!-- <img src="images/i love you.jpg" style="width: 30%; border-radius: 25px; padding: 10px"> -->
 		<a title="Лягушонок" rel="nofollow" target="_blank" href="images/лягушонок.jpg">
@@ -69,6 +68,13 @@
 			<img src="images/солнышко.jpg" style="width: 40%; border-radius: 25px; padding: 10px">
 		</a>
 	</div>
-	<hr>
+	<script type="text/javascript">
+  var date = new Date(); // Получаем текущие дату и время
+  var h = date.getHours(); // Получаем текущий час
+  const header =  document.getElementById("header");
+  if (h < 8 || h > 21) {
+  	document.getElementById("mainstyle").href = "style_main_night.css"; header.style.background ="rgba(203, 134, 268, 0.4)"; document.getElementById("ser").src="images/luna.png"; document.getElementById("ser").style.width ="30%"; document.getElementById("t.moe_s").innerHTML = "Спокойной Ночи и Сладких Снов!"; // Если сейчас ночь, то меняем файл стилей
+   }
+</script>
 </body>
 </html>
