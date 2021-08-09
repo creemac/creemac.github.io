@@ -8,12 +8,57 @@
 </head>
 <body id="body"> 
 	<h1 align="center" id="header" style="background:#ff5f75">♥ ❤ Я Люблю Сашу ❤ ♥ </h1>
+	<div>
+		<p id="t.moe_s" align="center" style="font-family: NexaScript-Light; color: white; font-size: 30px;text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);">
+			<script type = "text/javascript" >
+
+  
+
+    // Один день Время в мс (миллисекундах)
+
+    var one_day = 86400000
+
+  
+// Чтобы установить present_dates для двух переменных
+
+var present_date = new Date();
+
+  
+// 0-11 - месяц в JavaScript
+
+var christmas_day = new Date(2019, 6, 20)
+
+  
+// Рассчитать Рождество следующего года, если оно уже прошло.
+
+if (present_date.getMonth() == 11 && present_date.getdate() > 25)
+
+    christmas_day.setFullYear(christmas_day.getFullYear() + 1)
+
+  
+// Рассчитать результат в миллисекундах и затем преобразовать в дни
+
+var Result = Math.round(present_date.getTime() - christmas_day.getTime()) / (one_day);
+
+  
+// Удалить десятичные дроби из значения (Result) результирующих дней
+
+var Final_Result = Result.toFixed(0);
+
+  
+// Для отображения значения final_result
+
+document.write("♡ ❤  " + Final_Result + " дней ❤ ♡");
+  
+</script>
+		</p>
+	</div>
 	<div class="img" align="center">
 		<img id="ser" src="images/561-5618922_heart-png-clip-art-transparent-image-heart.png" style="width: 25%;">
 	</div>
 	<div>
 		<p id="t.moe_s" align="center" style="font-family: Honey; color: white; font-size: 50px;text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);">
-			Мое Сердчеко Cтучит (Для Тебя)
+			Мое Сердчеко Cтучит Для Тебя
 		</p>
 	</div>
 	<h2 align="center" class="header">Котик)</h2>
