@@ -34,7 +34,8 @@ h2{
 .img{
 	border-radius: 20px;
 	padding:15px;
-	animation: pulse 6s ease-in-out infinite; 
+	animation: pulse 6s ease-in-out infinite;
+	margin:-70px auto;
 }
 #header, .header{
 	width: 80%;
@@ -80,10 +81,10 @@ h2{
 .c-button {
 	appearance: none;
 	border: 0;
-	border-radius: 30px;
+	border-radius: 1000px;
 	background: rgba(123, 104, 238, 0.4);
 	color: #fff;
-	padding: 15px 10px 15px;
+	padding: 15px 15px 10px;
 	transition: 0.5s; /* Время эффекта */
 }
 .c-button:hover { 

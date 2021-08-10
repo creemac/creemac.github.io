@@ -52,6 +52,13 @@ if (last >= 2 && last <= 4)
 <div class="img" align="center">
 	<img id="ser" src="images/561-5618922_heart-png-clip-art-transparent-image-heart.png" style="width: 25%;">
 </div>
+<div id="chest">
+	<a href="#" onclick="new Audio('sounds/iloveu_2.mp3').play(); return false;">
+		<div class="heart left side top"></div>
+		<div class="heart center">&hearts;</div>
+		<div class="heart right side"></div>
+	</a>
+</div>
 <div>
 	<p id="t.moe_s" align="center" style="font-family: Honey; color: white; font-size: 50px;text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);">
 		Мое Сердчеко Cтучит Для Тебя
@@ -80,6 +87,9 @@ if (last >= 2 && last <= 4)
 	<a title="еще котэ)" rel="nofollow" target="_blank" href="images/еще котэ))).jpg">
 		<img src="images/еще котэ))).jpg" style="width: 18%; border-radius: 25px; padding: 10px">
 	</a>
+	<a title="как много тут котиков..." rel="nofollow" target="_blank" href="images/и и еще котэ111.jpg">
+		<img src="images/и еще котэ111.jpg" style="width: 18%; border-radius: 25px; padding: 10px">
+	</a>
 	<a title="блинчик, какой милый котик" rel="nofollow" target="_blank" href="images/котик в шапочке.jpg">
 		<img src="images/котик в шапочке.jpg" style="width: 18.3%; border-radius: 25px; padding: 10px">
 	</a>
@@ -88,6 +98,9 @@ if (last >= 2 && last <= 4)
 	</a>
 	<a title="чегооо??? кот с крыльями???" rel="nofollow" target="_blank" href="images/котик с крыльями.jpg">
 		<img src="images/котик с крыльями.jpg" style="width: 18%; border-radius: 25px; padding: 10px">
+	</a>
+	<a title="блин просто бомбовый котик честно говоря" rel="nofollow" target="_blank" href="images/блин просто бомбовый честно говоря.jpg">
+		<img src="images/блин просто бомбовый честно говоря.jpg" style="width: 18%; border-radius: 25px; padding: 10px">
 	</a>
 </div>
 <div>
@@ -135,7 +148,7 @@ var date = new Date(); // Получаем текущие дату и время
 var h = date.getHours(); // Получаем текущий час
 const header =  document.getElementById("header");
 if (h < 8 || h > 21) {
-	document.getElementById("mainstyle").href = "style_main_night.css"; header.style.background ="rgba(203, 134, 268, 0.4)"; document.getElementById("ser").src="images/luna.png"; document.getElementById("ser").style.width ="30%"; document.getElementById("t.moe_s").innerHTML = "Спокойной Ночи и Сладких Снов!"; // Если сейчас ночь, то меняем файл стилей
+	document.getElementById("mainstyle").href = "style_main_night.css"; header.style.background ="rgba(203, 134, 268, 0.4)"; document.getElementById("ser").src="images/luna.png"; document.getElementById("ser").style.width ="30%"; document.getElementById("t.moe_s").innerHTML = "Спокойной Ночи и Сладких Снов!"; document.getElementById('chest').style.display="none"; // Если сейчас ночь, то меняем файл стилей
 }
 </script>
 <script type="text/javascript">
@@ -190,10 +203,10 @@ if (performance.navigation.type == 1) {
 </script>
 <script type="text/javascript">
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    document.getElementById('panel_img').style.width="90%";
-  } else {
-     document.getElementById('panel_img').style.width="35%";
-}
+		document.getElementById('panel_img').style.width="90%";
+	} else {
+		document.getElementById('panel_img').style.width="35%";
+	}
 </script>
 </body>
 </html>
