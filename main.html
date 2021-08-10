@@ -181,11 +181,19 @@ if (performance.navigation.type == 1) {
 	}
 </script>
 <script type="text/javascript">
+	//отключаем скролл во время открытой панели
 	if (document.getElementById('panel_warning').style.display == "block") {
 		body.style.overflow = "hidden";
 	} else if (document.getElementById('panel_warning').style.display == "none") {
 		body.style.overflow = "visible";
 	}
+</script>
+<script type="text/javascript">
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.getElementById('panel_img').style.width="70%";
+  } else {
+     document.getElementById('panel_img').style.width="35%";
+}
 </script>
 </body>
 </html>
