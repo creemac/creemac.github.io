@@ -3,17 +3,17 @@ body{
 }
 a {text-decoration: none; }
 @font-face {
-    font-family: NexaScript-Light; /* Гарнитура шрифта */
-    src: url(fonts/19442.ttf); /* Путь к файлу со шрифтом */
-   }
-   @font-face {
-    font-family: Pecita; /* Гарнитура шрифта */
-    src: url(fonts/20180.otf); /* Путь к файлу со шрифтом */
-   }
-   @font-face {
-    font-family: Honey; /* Гарнитура шрифта */
-    src: url(fonts/20190.otf); /* Путь к файлу со шрифтом */
-   }
+	font-family: NexaScript-Light; /* Гарнитура шрифта */
+	src: url(fonts/19442.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: Pecita; /* Гарнитура шрифта */
+	src: url(fonts/20180.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: Honey; /* Гарнитура шрифта */
+	src: url(fonts/20190.otf); /* Путь к файлу со шрифтом */
+}
 h1{
 	color: white;
 	font-family: Pecita;
@@ -32,9 +32,9 @@ h2{
 	font-size: 30px;
 }
 .img{
- border-radius: 20px;
- padding:15px;
- animation: pulse 6s ease-in-out infinite; 
+	border-radius: 20px;
+	padding:15px;
+	animation: pulse 6s ease-in-out infinite; 
 }
 #header, .header{
 	width: 80%;
@@ -63,6 +63,40 @@ h2{
 	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 }
+
+#panel_warning, .panel_warning {
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	backdrop-filter:blur(20px);
+	position:fixed;
+	color:white;
+	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	left:0;
+	top:0;
+}
+.c-button {
+	appearance: none;
+	border: 0;
+	border-radius: 30px;
+	background: rgba(123, 104, 238, 0.4);
+	color: #fff;
+	padding: 0px 15px 0px;
+	margin:0px 3px 0px 3px;
+	transition: 0.5s; /* Время эффекта */
+}
+.c-button:hover { 
+	cursor: pointer;
+	background: #191970;
+	transform: scale(1.03); /* Увеличиваем масштаб */
+}
+
+.c-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px black;
+} 
 hr{
 	border: none; /* Убираем границу для браузера Firefox */
 	color: #CD5C5C; /* Цвет линии для остальных браузеров */
@@ -71,13 +105,13 @@ hr{
 	border-radius: 50px; 
 }
 @keyframes pulse {
-  from {
-    transform: scale(.95);
-  }
-  50% {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(.95);
-  }
+	from {
+		transform: scale(.95);
+	}
+	50% {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(.95);
+	}
 }

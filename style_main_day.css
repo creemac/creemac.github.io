@@ -63,6 +63,39 @@ h2{
 	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 }
+#panel_warning, .panel_warning {
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	backdrop-filter:blur(20px);
+	position:fixed;
+	color:white;
+	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	left:0;
+	top:0;
+}
+.c-button {
+	appearance: none;
+	border: 0;
+	border-radius: 30px;
+	background: rgba(255, 20, 147, 0.7);
+	color: #fff;
+	padding: 0px 15px 0px;
+	margin:0px 3px 0px 3px;
+	transition: 0.5s; /* Время эффекта */
+}
+.c-button:hover { 
+	cursor: pointer;
+	background: pink;
+	transform: scale(1.03); /* Увеличиваем масштаб */
+}
+
+.c-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px black;
+} 
 hr{
 	border: none; /* Убираем границу для браузера Firefox */
 	color: #CD5C5C; /* Цвет линии для остальных браузеров */
