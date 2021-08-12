@@ -18,16 +18,16 @@ h1{
 	color: white;
 	font-family: Pecita;
 	padding: 20px;
-	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0em 0.6em 15px rgba(0, 0, 0, 0.3);
 	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 	font-size: 40px;
 }
 h2{
-	background: rgba(203, 134, 268, 0.3);
+	background:  linear-gradient(to top,  rgba(123, 104, 238, 0.4), rgba(80, 50, 100, 0));
 	color: white;
 	font-family: NexaScript-Light;
 	padding: 20px;
-	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0em 0.6em 15px rgba(0, 0, 0, 0.3);
 	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 	font-size: 30px;
 }
@@ -50,7 +50,7 @@ h2{
 	color:white;
 }
 #content, .content{
-	background: rgba(123, 104, 238, 0.4);
+	background:  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(123, 104, 238, 0.4));
 	width: 70%;
 	margin: 30px auto;
 	transition: 0.7s; /* Время эффекта */
@@ -61,7 +61,7 @@ h2{
 	padding:25px 25px 20px;
 	position:relative;
 	color:white;
-	box-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0em -1em 10px rgba(0, 0, 0, 0.1);
 	text-shadow: 0em 0.1em 10px rgba(0, 0, 0, 0.5);
 }
 
