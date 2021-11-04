@@ -1,5 +1,8 @@
-body{
+/*body{
 	background:  linear-gradient(to top, #FF69B4, #F08080);
+}*/
+body{
+	background:  black;
 }
 a {text-decoration: none; }
 @font-face {
@@ -121,7 +124,7 @@ hr{
     position:relative;
     width:500px;
     height:500px;
-    margin:-70px auto;
+    margin: auto;
 }
 .heart {
     position:absolute;
